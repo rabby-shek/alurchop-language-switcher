@@ -1,7 +1,7 @@
 {
   "name": "alurchop-language-switcher",
   "private": false,
-  "version": "0.3.0",
+  "version": "0.4.0",
   "type": "module",
   "main": "dist/index.cjs.js",
   "license": "MIT",
