@@ -85,7 +85,7 @@ You can use the provided LanguageToggle component to easily add a language selec
 ```bash
 // App.js
 import React from 'react';
-import { LanguageProvider, LanguageToggle, changeLanguage } from 'alurchop-language-switcher';
+import { LanguageProvider, LanguageToggle, useLanguage } from 'alurchop-language-switcher';
 
 const myTranslations = {
   en: {
@@ -99,6 +99,7 @@ const myTranslations = {
 };
 
 const App = () => {
+  const {changeLanguage} = useLanguage();
   return (
     <LanguageProvider translations={myTranslations} defaultLang="en">
       <div style={{ padding: "20px", fontFamily: "sans-serif" }}>
